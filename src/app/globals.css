@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-gray-900 text-white;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-container {
+  width: 100%;       /* viewport for the scroll */
+  overflow: hidden;
+  
+
+}
+
+.scroll-wrapper {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+   
+}
+
+.scroll-container:hover .scroll-wrapper {
+  animation-play-state: paused;
+}
+
+/* Each card */
+.testimonial-card {
+  flex: 0 0 300px;    /* fixed width */
+  margin-right: 1.5rem;
+  background: #1f2937;
+  padding: 1rem;
+  border-radius: 0.75rem;
+   border: 0.5px solid rgb(195, 111, 247);
+   cursor: pointer;
+}
+
+/* Scroll keyframes */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* moves the full width of original cards */
+  }
+}
