@@ -17,9 +17,9 @@ const Testimonials = () => {
           {/* Duplicate testimonials to create seamless loop */}
           {[...testimonials, ...testimonials].map((item, index) => (
             <div key={index} className="testimonial-card">
-              <p className="italic mb-2">“{item.quote}”</p>
-              <h3 className="font-bold">{item.name}</h3>
-              <p className="text-sm text-gray-400">{item.title}</p>
+              <p className="italic text-sm md:text-base mb-2">“{item.quote}”</p>
+              <p className="font-bold">{item.name}</p>
+              <p className="text-xs md:text-base text-gray-400">{item.title}</p>
             </div>
           ))}
         </div>

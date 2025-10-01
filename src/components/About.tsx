@@ -34,8 +34,8 @@ const About = () => {
                 transition={{ delay: 0.2 * index, duration: 0.6 }}
               >
                 <Icon className="text-4xl text-blue-400 mb-2" />
-                <h3 className="text-xl font-bold">{item.heading}</h3>
-                <p className="text-gray-300">{item.para}</p>
+                <p className="text-xl font-bold">{item.heading}</p>
+                <p className="text-gray-300 md:text-base text-sm">{item.para}</p>
               </motion.div>
             );
           })}
@@ -64,12 +64,12 @@ const About = () => {
             >
               {/* Heading + Year */}
               <div className="flex justify-between items-center w-full">
-                <h3 className="text-xl font-bold">{edu.heading}</h3>
+                <p className="text-xl font-bold">{edu.heading}</p>
                 <span className="text-sm text-gray-400">{edu.year}</span>
               </div>
 
               {/* College / School */}
-              <p className="text-gray-300">{edu.para1}</p>
+              <p className="text-gray-300 md:text-base text-sm">{edu.para1}</p>
 
               {/* Extra para for B.Tech */}
               {edu.para2 && (

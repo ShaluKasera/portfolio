@@ -46,7 +46,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
         <p className="text-lg font-semibold mb-2">{title}</p>
 
         {/* Description */}
-        <p className="text-gray-300 text-sm mb-4 flex-1">{description}</p>
+        <p className="text-gray-300 text-xs md:text-base mb-4 flex-1">{description}</p>
 
         {/* Links */}
         <div className="flex gap-4 mt-auto">
