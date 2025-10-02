@@ -26,7 +26,7 @@ const Hero: FC = () => {
         transition={{ duration: 0.8 }}
       >
         <Image
-          src="/profile.jpeg"
+          src="/human.png"
           alt="Shalu Kumari"
           width={250}
           height={250}
