@@ -5,7 +5,7 @@ import MagicButton from "./ui/MagicButton";
 
 const Contact = () => {
   return (
-    <section className="flex flex-col items-center justify-center px-10 md:px-16 lg:px-32 xl:px-80 py-12 text-center">
+    <section id="contact" className="flex flex-col items-center justify-center px-10 md:px-16 lg:px-32 xl:px-80 py-12 text-center">
       <p className="text-3xl md:text-5xl font-bold mb-6">
         Ready to take your{" "}
         <span className="text-blue-200">digital presence</span> to the next
